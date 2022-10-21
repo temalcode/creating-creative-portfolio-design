@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+::-moz-selection { 
+    color: black;
+    background: white;
+}
+  
+::selection {
+    color: black;
+    background: white;
+}
+
+.cursor-outer{
+    padding: 1rem;
+}
+
+.inner-cursor{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+	pointer-events: none;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+.cursor{
+    position: absolute;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	pointer-events: none;
+    transition: all 0.09s;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    max-width: 1440px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.nav-links a{
+    margin-right: 2.5rem;
+}
+
+.nav-links a:last-child{
+    margin: 0;
+}
+
+.logo{
+    font-weight: 600;
+}
+
+.heading{
+    margin: 10rem auto;
+    width: 500px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: 0 auto 3rem auto;
+    width: fit-content;
+}
+
+.portfolio-grid{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio__item{
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 1s;
+}
+
+.portfolio__item:hover{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    line-height: 5rem;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+
+.portfolio1{
+    background-image: url('../images/portfolio/image1.png');  
+}
+.portfolio2{
+    background-image: url('../images/portfolio/image2.png');  
+}
+.portfolio3{
+    background-image: url('../images/portfolio/image3.png');  
+}
+.portfolio4{
+    background-image: url('../images/portfolio/image4.png');  
+}
+.portfolio5{
+    background-image: url('../images/portfolio/image5.png');  
+}
+.portfolio6{
+    background-image: url('../images/portfolio/image6.png');  
+}
+
+.about{
+    margin-top: 15rem;
+}
+
+.about__title{
+    margin-bottom: 2rem;
+}
+
+.about__para{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about__people{
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.people{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.people1{
+    background-image: url('../images/people/people1.png');
+}
+.people2{
+    background-image: url('../images/people/people2.png');
+}
+.people3{
+    background-image: url('../images/people/people3.png');
+}
+.people4{
+    background-image: url('../images/people/people4.png');
+}
+
+.services{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+.services-grid{
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.service{
+    background-color: white;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+}
+
+.service p{
+    color: black;
+    width: 80%;
+}
+
+.service__title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service__para{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.service a{
+    color: black;
+    font-weight: 700;
+    position: relative;
+}
+
+.contact-container{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.contact-container a {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+footer{
+    margin-top: 12rem;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container div{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-container div a{
+    font-weight: 200;
+}
+
